@@ -45,4 +45,28 @@
 
 // xhr.send();
 
-//3. abort event -> Aborting with SetTimeout and XHR
+
+//3. onabort or ontimeout property -> Aborting with SetTimeout and XHR
+
+// const xhr = new XMLHttpRequest();
+// xhr.open("GET", "https://jsonplaceholder.typicode.com/comments");
+
+// xhr.timeout = 1000;
+
+// xhr.ontimeout = ()=>{
+//     console.log("Request aborted due to time!!");
+// }
+
+// xhr.onreadystatechange = ()=>{
+//     if(xhr.status === 200){
+//         if(xhr.readyState === 4){
+//             setTimeout(()=>{
+//                 console.log("The request was successfull: ", xhr.responseText);
+//             },1000)
+//         }else{
+//             console.log("Request loading...")
+//         }
+//     }
+// }
+// xhr.send();
+
