@@ -46,7 +46,7 @@
 // xhr.send();
 
 
-//3. onabort or ontimeout property -> Aborting with SetTimeout and XHR
+//3. ontimeout property -> Aborting with SetTimeout and XHR
 
 // const xhr = new XMLHttpRequest();
 // xhr.open("GET", "https://jsonplaceholder.typicode.com/comments");
